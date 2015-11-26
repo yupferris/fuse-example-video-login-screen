@@ -1,3 +1,53 @@
-<App Theme="Basic">
+<App Theme="Basic" ClearColor="#200c50">
+	<iOS.StatusBarConfig Style="Light" />
+
+	<DockPanel>
+		<Style>
+			<Text TextColor="#ffffff" />
+			<TextInput PlaceholderColor="#ffffff80" TextColor="#ffffff" CaretColor="#ffffff" />
+		</Style>
+
+		<!-- Button colors -->
+		<float4 ux:Key="C600" ux:Value="#8869e5" />
+		<float4 ux:Key="C700" ux:Value="#6447b3" />
+		<float4 ux:Key="CFillFore" ux:Value="#644793" />
+
+		<StatusBarBackground Dock="Top" />
+		<BottomBarBackground Dock="Bottom" />
+
+		<JavaScript>
+			var Observable = require("FuseJS/Observable");
+
+			var username = Observable("");
+			var password = Observable("");
+
+			var areCredentialsValid = Observable(function() {
+				return username.value != "" && password.value != "";
+			});
+
+			module.exports = {
+				username: username,
+				password: password,
+
+				areCredentialsValid: areCredentialsValid
+			};
+		</JavaScript>
+
+		<Video Layer="Background" File="YOUR_VIDEO_HERE" IsLooping="true" AutoPlay="true" StretchMode="UniformToFill" ContentAlignment="Center" Opacity="0.3" Padding="-10">
+			<Blur Radius="3.31" />
+		</Video>
+
+		<Grid Rows="1*,1*">
+			<StackPanel Alignment="VerticalCenter">
+				<Text Alignment="HorizontalCenter" FontSize="50">awesomusic</Text>
+				<Text Alignment="HorizontalCenter" Opacity=".5">music and puns and stuff</Text>
+			</StackPanel>
+			<StackPanel Alignment="VerticalCenter" Margin="50,0,50,0">
+				<TextInput PlaceholderText="username" Value="{username}" />
+				<TextInput PlaceholderText="password" IsPassword="true" Value="{password}" />
+				<Button Text="Log in" IsEnabled="{areCredentialsValid}" />
+			</StackPanel>
+		</Grid>
+	</DockPanel>
 </App>
 
