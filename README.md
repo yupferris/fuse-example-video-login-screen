@@ -1,5 +1,5 @@
 # Video Login Screen Fuse Example
-Example project to accompany the "[Video Login Screen](https://youtu.be/Th0V2p7EmXw)" Fuse tutorial video. This is a very basic example made to show how easy it is to build a classic login screen with a video background. All relevant code is in the `MainView.ux` file.
+Example project to accompany the "[Video Login Screen](https://youtu.be/zfiz-yI4VWY)" Fuse tutorial video. This is a very basic example made to show how easy it is to build a classic login screen with a video background. All relevant code is in the `MainView.ux` file.
 
 ## Setup
 _NOTE: this is covered in the tutorial video._
