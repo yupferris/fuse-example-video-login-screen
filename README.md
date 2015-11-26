@@ -7,7 +7,7 @@ _NOTE: this is covered in the tutorial video._
 You'll need to supply your own video file to use with this example. Insert the file path to your video file on line 36 in `MainView.ux` where it says `YOUR_VIDEO_HERE`:
 
 ```xml
-		<Video Layer="Background" File="YOUR_VIDEO_HERE"
+		<Video Layer="Background" File="YOUR_VIDEO_HERE" ...
 ```
 
 Once that's done, you're all set!
