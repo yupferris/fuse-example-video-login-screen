@@ -2,10 +2,8 @@
 	<iOS.StatusBarConfig Style="Light" />
 
 	<DockPanel>
-		<Style>
-			<Text TextColor="#ffffff" />
-			<TextInput PlaceholderColor="#ffffff80" TextColor="#ffffff" CaretColor="#ffffff" />
-		</Style>
+		<Text ux:Class="WhiteText" TextColor="#ffffff" />
+		<TextInput ux:Class="WhiteTextInput" PlaceholderColor="#ffffff80" TextColor="#ffffff" CaretColor="#ffffff" />
 
 		<!-- Button colors -->
 		<float4 ux:Key="C600" ux:Value="#8869e5" />
@@ -39,12 +37,12 @@
 
 		<Grid Rows="1*,1*">
 			<StackPanel Alignment="VerticalCenter">
-				<Text Alignment="HorizontalCenter" FontSize="50">awesomusic</Text>
-				<Text Alignment="HorizontalCenter" Opacity=".5">music and puns and stuff</Text>
+				<WhiteText Alignment="HorizontalCenter" FontSize="50">awesomusic</WhiteText>
+				<WhiteText Alignment="HorizontalCenter" Opacity=".5">music and puns and stuff</WhiteText>
 			</StackPanel>
 			<StackPanel Alignment="VerticalCenter" Margin="50,0,50,0">
-				<TextInput PlaceholderText="username" Value="{username}" />
-				<TextInput PlaceholderText="password" IsPassword="true" Value="{password}" />
+				<WhiteTextInput PlaceholderText="username" Value="{username}" />
+				<WhiteTextInput PlaceholderText="password" IsPassword="true" Value="{password}" />
 				<Button Text="Log in" IsEnabled="{areCredentialsValid}" />
 			</StackPanel>
 		</Grid>
