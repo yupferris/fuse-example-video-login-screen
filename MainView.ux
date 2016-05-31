@@ -1,7 +1,7 @@
-<App Theme="Basic" ClearColor="#200c50">
+<App>
 	<iOS.StatusBarConfig Style="Light" />
 
-	<DockPanel>
+	<DockPanel Background="#200c50">
 		<Text ux:Class="WhiteText" TextColor="#ffffff" />
 		<TextInput ux:Class="WhiteTextInput" PlaceholderColor="#ffffff80" TextColor="#ffffff" CaretColor="#ffffff" />
 
