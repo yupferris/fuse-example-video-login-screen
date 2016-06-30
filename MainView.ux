@@ -1,7 +1,7 @@
 <App>
 	<iOS.StatusBarConfig Style="Light" />
 
-	<DockPanel Background="#200c50">
+	<DockPanel Background="#022328">
 		<Text ux:Class="WhiteText" TextColor="#ffffff" />
 		<TextInput ux:Class="WhiteTextInput" PlaceholderColor="#ffffff80" TextColor="#ffffff" CaretColor="#ffffff" />
 
@@ -12,6 +12,8 @@
 
 		<StatusBarBackground Dock="Top" />
 		<BottomBarBackground Dock="Bottom" />
+
+		<WhiteText Dock="Bottom" Margin="10" Opacity=".5" TextAlignment="Center" FontSize="12">original video by Graham Uhelski</WhiteText>
 
 		<JavaScript>
 			var Observable = require("FuseJS/Observable");
@@ -31,14 +33,14 @@
 			};
 		</JavaScript>
 
-		<Video Layer="Background" File="YOUR_VIDEO_HERE" IsLooping="true" AutoPlay="true" StretchMode="UniformToFill" ContentAlignment="Center" Opacity="0.3" Padding="-10">
-			<Blur Radius="3.31" />
+		<Video Layer="Background" File="assets/nature.mp4" IsLooping="true" AutoPlay="true" StretchMode="UniformToFill" ContentAlignment="Center" Opacity="0.5">
+			<Blur Radius="4.75" />
 		</Video>
 
 		<Grid Rows="1*,1*">
 			<StackPanel Alignment="VerticalCenter">
-				<WhiteText Alignment="HorizontalCenter" FontSize="50">awesomusic</WhiteText>
-				<WhiteText Alignment="HorizontalCenter" Opacity=".5">music and puns and stuff</WhiteText>
+				<WhiteText Alignment="HorizontalCenter" FontSize="70">hikr</WhiteText>
+				<WhiteText Alignment="HorizontalCenter" Opacity=".5">get out there</WhiteText>
 			</StackPanel>
 			<StackPanel Alignment="VerticalCenter" Margin="50,0,50,0">
 				<WhiteTextInput PlaceholderText="username" Value="{username}" Alignment="HorizontalCenter" />

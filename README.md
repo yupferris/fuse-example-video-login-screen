@@ -20,3 +20,5 @@ The "finished product" is on the `master` branch, and the template I started wit
 
 ## License
 This code is licensed under the BSD2 license (see LICENSE).
+
+The provided video file (`assets/nature.mp4`) is a modified version of [Graham Uhelski](https://vimeo.com/mankindfilms)'s ["The Valley"](http://mazwai.com/#/videos/220). It is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
