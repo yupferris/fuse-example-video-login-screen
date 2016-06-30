@@ -33,10 +33,6 @@
 			};
 		</JavaScript>
 
-		<Video Layer="Background" File="assets/nature.mp4" IsLooping="true" AutoPlay="true" StretchMode="UniformToFill" ContentAlignment="Center" Opacity="0.5">
-			<Blur Radius="4.75" />
-		</Video>
-
 		<Grid Rows="1*,1*">
 			<StackPanel Alignment="VerticalCenter">
 				<WhiteText Alignment="HorizontalCenter" FontSize="70">hikr</WhiteText>
