@@ -5,11 +5,6 @@
 		<Text ux:Class="WhiteText" TextColor="#ffffff" />
 		<TextInput ux:Class="WhiteTextInput" PlaceholderColor="#ffffff80" TextColor="#ffffff" CaretColor="#ffffff" />
 
-		<!-- Button colors -->
-		<float4 ux:Key="C600" ux:Value="#8869e5" />
-		<float4 ux:Key="C700" ux:Value="#6447b3" />
-		<float4 ux:Key="CFillFore" ux:Value="#644793" />
-
 		<StatusBarBackground Dock="Top" />
 		<BottomBarBackground Dock="Bottom" />
 
